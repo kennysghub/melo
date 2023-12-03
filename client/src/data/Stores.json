@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "name": "sweetgreen",
+    "menuItems": [9, 4, 3, 1, 14, 15, 16, 17, 18, 19, 20],
+    "address": {
+      "street": "8055 W 3rd St",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": 90048
+    },
+    "coords": {
+      "lat": 34.0722397460752,
+      "lng": -118.36506332334898
+    }
+  },
+  {
+    "id": 2,
+    "name": "sweetgreen",
+    "address": {
+      "street": "180 S La Brea Ave",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": 90036
+    },
+    "menuItems": [2, 7, 4, 6, 10, 15, 16, 17, 18, 20],
+    "coords": {
+      "lat": 34.076745433423596,
+      "lng": -118.34419012844023
+    }
+  },
+  {
+    "id": 3,
+    "name": "sweetgreen",
+    "menuItems": [1, 2, 5, 7, 11, 12, 13, 14, 16, 17, 18, 19, 20],
+    "address": {
+      "street": "601 W 5th St",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": 90071
+    },
+    "coords": {
+      "lat": 34.050604492764855,
+      "lng": -118.25411523669361
+    }
+  },
+  {
+    "id": 4,
+    "name": "sweetgreen",
+    "menuItems": [3, 8, 10, 11, 14, 15, 18, 20],
+    "address": {
+      "street": "714 Spectrum Center Dr",
+      "city": "Irvine",
+      "state": "CA",
+      "zip": 92618
+    },
+    "coords": {
+      "lat": 33.68246937343364,
+      "lng": -117.74711368870703
+    }
+  },
+  {
+    "id": 5,
+    "name": "sweetgreen",
+    "menuItems": [1, 2, 5, 6, 8, 10, 12, 13, 14, 15, 16, 18, 20],
+    "address": {
+      "street": "7811 Monet Ave Spce 1305",
+      "city": "Rancho Cucamonga",
+      "state": "CA",
+      "zip": 91739
+    },
+    "coords": {
+      "lat": 34.111704165277615,
+      "lng": -117.53418697288735
+    }
+  }
+]
