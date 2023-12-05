@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "SG- MeLo challenge",
   "main": "index.js",
+  "workspaces": [
+    "client",
+    "server"
+  ],
   "scripts": {
     "test": "jest",
     "lint": "eslint --fix \"./client/src/**/*.{js,jsx,ts,tsx,json}\"",
     "start": "concurrently \"npm start --prefix server\" \"npm start --prefix client\"",
     "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "install-all": "npm install"
   },
   "keywords": [],
   "author": "",
