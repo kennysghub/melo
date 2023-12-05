@@ -13,7 +13,7 @@ This uses `@vis.gl/react-google-maps`, the first Google-sponsored React library 
 ## Installation
 
 ```
-npm install
+npm run install-all
 ```
 
 ## Start
