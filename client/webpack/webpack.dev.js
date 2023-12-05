@@ -6,13 +6,11 @@ module.exports = {
   devtool: 'cheap-module-source-map',
   plugins: [
     new webpack.DefinePlugin({
-      'process.env.name': JSON.stringify('Kenny'),
+      'process.env.name': JSON.stringify('dev'),
     }),
   ],
   devServer: {
-    // Required for Docker to work with dev server
     host: '0.0.0.0',
-    //host: localhost,
     port: 8080,
     //enable HMR on the devServer
     hot: true,

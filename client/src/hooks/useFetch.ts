@@ -6,7 +6,7 @@ type FetchDataType<T> = T | null;
 // Define a type for the error
 type FetchErrorType = string | null;
 
-function useFetch<T>(url: string) {
+export const useFetch = <T>(url: string) => {
   const [data, setData] = useState<FetchDataType<T>>(null);
 
   const [loading, setLoading] = useState<boolean>(false);
@@ -38,6 +38,4 @@ function useFetch<T>(url: string) {
   };
 
   return { data, loading, error, refetch };
-}
-
-export default useFetch;
+};

@@ -4,6 +4,7 @@
     "module": "commonjs" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */,
     "moduleResolution": "node" /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */ /* Type declaration files to be included in compilation. */,
     "outDir": "./dist",
+    "types": ["node", "jest", "@testing-library/jest-dom"],
     "lib": [
       "DOM",
       "ESNext"
@@ -19,5 +20,5 @@
     // "allowJs": true /* Allow javascript files to be compiled. Useful when migrating JS to TS */,
     // "checkJs": true /* Report errors in .js files. Works in tandem with allowJs. */,
   },
-  "include": ["client/src/**/*", "server/**/*"]
+  "include": ["client/src/**/*", "server/**/*", "client/__tests__/**/*"]
 }

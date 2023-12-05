@@ -2,10 +2,8 @@
 * {
   font-family: 'IBM Plex Sans', sans-serif;
 }
-h1 {
-  font-family: 'IBM Plex Serif', serif;
-}
 
+/* -------------------------------- Menu Item ------------------------------- */
 .item-button {
   background-color: #49a078;
   border: solid 2px inset #dce1de;
@@ -24,8 +22,7 @@ h1 {
   overflow-y: hidden;
 }
 
-/* Accordion */
-
+/* -------------------------------- Accordion ------------------------------- */
 .accordion {
   margin: 2rem;
   background-color: #38a3a5;
@@ -35,8 +32,7 @@ h1 {
   border-radius: 8px;
 }
 
-/* Checkout Page */
-
+/* ------------------------------ Checkout Page ----------------------------- */
 .checkout-container {
   margin-top: 20px;
 }
@@ -55,7 +51,7 @@ h1 {
 }
 
 .subtotal span {
-  color: #007bff; /* Bootstrap primary color */
+  color: #007bff;
 }
 
 .checkout-item {
@@ -70,6 +66,7 @@ h1 {
   color: #555;
 }
 
+/* ----------------------- iOS and Android Store Icons ---------------------- */
 .app-links img {
   margin: 0 10px;
 }

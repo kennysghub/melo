@@ -1,7 +1,7 @@
-import { useState, useRef, useEffect } from 'react';
+import React from 'react';
 
-export default function useGeolocation(options = {}) {
-  const [state, setState] = useState({
+export const useGeolocation = (options = {}) => {
+  const [state, setState] = React.useState({
     loading: true,
     accuracy: null,
     altitude: null,
@@ -14,9 +14,9 @@ export default function useGeolocation(options = {}) {
     error: null,
   });
 
-  const optionsRef = useRef(options);
+  const optionsRef = React.useRef(options);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const onEvent = ({ coords, timestamp }) => {
       setState({
         loading: false,
@@ -58,4 +58,4 @@ export default function useGeolocation(options = {}) {
   }, []);
 
   return state;
-}
+};

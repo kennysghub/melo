@@ -1,0 +1,59 @@
+/* General Styling */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: blue;
+  line-height: 1.6;
+  border: 1px solid red;
+}
+
+/* Styleguide Header */
+.header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Navigation Sidebar */
+.sidebar {
+  background-color: #f5f5f5;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar a {
+  color: #333;
+}
+
+/* Override Component Preview Background */
+.preview {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Code Blocks */
+.code {
+  background-color: #272822;
+  color: #f8f8f2;
+  border-radius: 4px;
+}
+
+/* Table Styles */
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #4a90e2;
+  color: white;
+}

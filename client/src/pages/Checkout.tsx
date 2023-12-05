@@ -1,33 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useShoppingCart } from '../context/ShoppingCartContext';
-import storeItems from '../data/Items.json';
-import { formatCurrency } from '../utilities/formatCurrency';
-import {
-  Container,
-  Row,
-  Col,
-  Form,
-  Button,
-  Card,
-  ListGroup,
-} from 'react-bootstrap';
+import { formatCurrency } from '../utils/formatCurrency';
+import { useStoreItems } from '../context/StoreItemsContext';
+import { Container, Row, Col, Form, Button, ListGroup } from 'react-bootstrap';
 
 export const Checkout = () => {
-  const { cartItems } = useShoppingCart();
+  const [name, setName] = React.useState('');
+  const [address, setAddress] = React.useState('');
+  const [email, setEmail] = React.useState('');
 
-  const [name, setName] = useState('');
-  const [address, setAddress] = useState('');
-  const [email, setEmail] = useState('');
+  /* --------------------------------- Context -------------------------------- */
+  const { cartItems } = useShoppingCart();
+  const { storeItems } = useStoreItems();
 
   const subtotal = cartItems.reduce((total, cartItem) => {
-    const item = storeItems.find((i) => i.id === cartItem.id);
+    const item = storeItems?.find((i) => i.id === cartItem.id);
     return total + (item?.price || 0) * cartItem.quantity;
   }, 0);
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    // Handle form submission logic here
-    // For example, send data to a backend server or process it as needed
+    //  Handle form submission logic here, send data to a backend server or process it as needed
   };
 
   return (
@@ -69,14 +62,14 @@ export const Checkout = () => {
           <h2>Your Order</h2>
           <ListGroup>
             {cartItems.map((item) => {
-              const product = storeItems.find((i) => i.id === item.id);
+              const product = storeItems?.find((i) => i.id === item.id);
               return (
                 <ListGroup.Item key={item.id} className="checkout-item">
                   <Row>
                     <Col xs={3}>
                       <img
                         src={product?.imgUrl}
-                        alt={`Image of ${product?.name}`}
+                        alt={`${product?.name}`}
                         className="img-fluid"
                       />
                     </Col>
