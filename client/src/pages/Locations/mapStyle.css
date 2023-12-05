@@ -1,0 +1,28 @@
+.map-container {
+  width: 90vw;
+  height: 80vh;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  /* border: 2px solid #216869; */
+  border: 10px solid whitesmoke;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    width: 95vw;
+    height: 50vh;
+  }
+}
+
+/* Map Search Input */
+
+.map-input {
+  width: 20rem;
+  height: 2rem;
+  border: 1.5px solid gray;
+  border-radius: 3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}

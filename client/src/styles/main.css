@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=IBM+Plex+Serif&display=swap');
+* {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* -------------------------------- Menu Item ------------------------------- */
+.item-button {
+  background-color: #49a078;
+  border: solid 2px inset #dce1de;
+}
+.item-button on:hover {
+  background-color: #9cc5a1;
+}
+
+.item-card {
+  box-sizing: border-box;
+  border: 10px solid whitesmoke;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+/* -------------------------------- Accordion ------------------------------- */
+.accordion {
+  margin: 2rem;
+  background-color: #38a3a5;
+  border: 2px solid gray;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 8px;
+}
+
+/* ------------------------------ Checkout Page ----------------------------- */
+.checkout-container {
+  margin-top: 20px;
+}
+
+.checkout-form {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.subtotal {
+  font-weight: bold;
+  text-align: right;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.subtotal span {
+  color: #007bff;
+}
+
+.checkout-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.checkout-item span {
+  font-weight: bold;
+  color: #555;
+}
+
+/* ----------------------- iOS and Android Store Icons ---------------------- */
+.app-links img {
+  margin: 0 10px;
+}
