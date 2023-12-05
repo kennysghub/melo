@@ -60,7 +60,6 @@ export const StoreItem = ({
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-
         {showQuantityControls && ( // Conditional to check if item is being viewed on main Store page, or LocationSpecificMenu
           <div className="mt-auto">
             {quantity === 0 ? (
