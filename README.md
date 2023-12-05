@@ -12,6 +12,8 @@ This uses `@vis.gl/react-google-maps`, the first Google-sponsored React library 
 
 ## Installation
 
+In the root directory, run:
+
 ```
 npm run install-all
 ```

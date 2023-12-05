@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import { Home } from '../../src/pages/Home';
+import { Home } from './Home';
 
 describe('Home page renders title', () => {
   it('should render without crashing', () => {
