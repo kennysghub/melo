@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useFetch } from '../hooks/useFetch';
 import { Col, Row } from 'react-bootstrap';
-import { StoreItem } from './MenuItemCard/MenuItemCard';
+import { MenuItemCard } from './MenuItemCard/MenuItemCard';
 
 interface MenuItem {
   _id: string;
@@ -35,7 +35,7 @@ export const LocationSpecificMenu: React.FC = () => {
       <Row lg={3} md={2} xs={1} className="g-3">
         {menuItems.map((item) => (
           <Col key={item.id}>
-            <StoreItem {...item} showQuantityControls={true} />
+            <MenuItemCard {...item} showQuantityControls={true} />
           </Col>
         ))}
       </Row>

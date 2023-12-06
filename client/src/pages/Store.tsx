@@ -1,5 +1,5 @@
 import { Col, Row } from 'react-bootstrap';
-import { StoreItem } from '../components/MenuItemCard/MenuItemCard';
+import { MenuItemCard } from '../components/MenuItemCard/MenuItemCard';
 import { useStoreItems } from '../context/StoreItemsContext';
 
 export const Store = () => {
@@ -13,7 +13,7 @@ export const Store = () => {
       <Row lg={3} md={2} xs={1} className="g-3">
         {storeItems?.map((item) => (
           <Col key={item.id}>
-            <StoreItem {...item} showQuantityControls={false} />
+            <MenuItemCard {...item} showQuantityControls={false} />
           </Col>
         ))}
       </Row>

@@ -19,8 +19,6 @@
 ## Example
 
 ```jsx
-import { StoreItem } from './StoreItem';
-
 <StoreItem
   id={1}
   name="Apple"
@@ -31,7 +29,7 @@ import { StoreItem } from './StoreItem';
   protein={0.3}
   carbs={25}
   showQuantityControls={true}
-/>;
+/>
 ```
 
 This will render a card with an image of an apple, the name "Apple", the price $0.50, a description "A fresh apple.", and nutritional information (95 calories, 0.3g protein, 25g carbs). It will also show controls for adjusting the quantity of the item in the cart.

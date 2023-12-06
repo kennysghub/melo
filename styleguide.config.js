@@ -1,15 +1,26 @@
 const path = require('path');
 
 module.exports = {
-  title: 'Style guide example',
+  title: 'Component Style Guide',
   sections: [
     {
       name: 'Components',
       components: 'client/src/components/**/*.tsx',
+      componentDetect: (filePath) => {
+        return !filePath.endsWith('/index.ts');
+      },
+      ignore: [
+        '**/index.ts',
+        '**/tests/**/*.tsx', // Add this line to exclude all .tsx files in tests folders
+      ],
     },
     {
       name: 'Utilities',
       content: 'client/src/utils/README.md',
+      ignore: [
+        '**/index.ts',
+        // Any other files or patterns you want to ignore
+      ],
     },
   ],
 	showSidebar: true,

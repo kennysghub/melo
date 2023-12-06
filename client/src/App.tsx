@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 import { Store } from './pages/Store';
 import { About } from './pages/About';
 import { Home } from './pages/Home';
-import { Navbar } from './components/Navbar/Navbar';
+import { NavbarComponent } from './components/Navbar/NavbarComponent';
 import { LocationSpecificMenu } from './components/LocationSpecificMenu';
 import { ShoppingCartProvider } from './context/ShoppingCartContext';
 import { StoreItemsProvider } from './context/StoreItemsContext';
@@ -15,7 +15,7 @@ export const App = () => {
     <>
       <StoreItemsProvider>
         <ShoppingCartProvider>
-          <Navbar />
+          <NavbarComponent />
           <Container className="mb-4">
             <Routes>
               <Route path="/" element={<Home />} />
