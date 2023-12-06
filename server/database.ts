@@ -1,11 +1,6 @@
 const MONGO_URI = process.env.MONGO_URI;
 
 import { MongoClient, ServerApiVersion } from "mongodb";
-//const uri ="mongodb+srv://nguyenkenneth:ZCazpj9SX3rhZlMF@melo.4nsbhkn.mongodb.net/?retryWrites=true&w=majority";
-
-// if (!MONGO_URI) {
-//   throw new Error("The MONGO_URI environment variable is not set.");
-// }
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(MONGO_URI || "", {
   serverApi: {

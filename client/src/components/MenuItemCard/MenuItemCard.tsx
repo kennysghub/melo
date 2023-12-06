@@ -14,7 +14,7 @@ export type StoreItemProps = {
   showQuantityControls: boolean;
 };
 
-export const StoreItem = ({
+export const MenuItemCard = ({
   id,
   name,
   price,
