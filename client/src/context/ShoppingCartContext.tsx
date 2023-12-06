@@ -42,6 +42,7 @@ export const ShoppingCartProvider = ({
     0
   );
 
+  /* -------------------- Open and Close Cart functionality ------------------- */
   const openCart = () => setIsOpen(true);
   const closeCart = () => setIsOpen(false);
 

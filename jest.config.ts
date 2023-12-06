@@ -15,6 +15,8 @@ const config: Config.InitialOptions = {
   testMatch: [
     "<rootDir>/client/__tests__/**/*.(ts|tsx)",
     "<rootDir>/client/src/**/*.test.(ts|tsx)",
+    "<rootDir>/client/src/components/**/tests/*.test.(ts|tsx)", // Include tests in any subfolder within components
+    "<rootDir>/client/src/pages/**/tests/*.test.(ts|tsx)",
   ],
 };
 
