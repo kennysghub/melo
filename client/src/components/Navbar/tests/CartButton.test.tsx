@@ -33,6 +33,4 @@ describe('CartButton', () => {
     render(<CartButton cartQuantity={0} openCart={mockOpenCart} />);
     expect(screen.getByText('0')).toBeInTheDocument();
   });
-
-  // Add more tests for edge cases or other aspects as needed
 });

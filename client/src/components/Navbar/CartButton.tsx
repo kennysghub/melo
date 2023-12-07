@@ -25,6 +25,7 @@ export const CartButton = ({ cartQuantity, openCart }: CartButtonProps) => {
     >
       <FontAwesomeIcon icon={faCartShopping} style={{ color: '#066a5b' }} />
       <div
+        data-testid="fa-cart-shopping"
         className="rounded-circle bg-danger d-flex justify-content-center align-items-center"
         style={{
           color: 'white',
