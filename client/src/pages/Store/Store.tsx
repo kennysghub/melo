@@ -1,6 +1,6 @@
 import { Col, Row } from 'react-bootstrap';
-import { MenuItemCard } from '../components/MenuItemCard/MenuItemCard';
-import { useStoreItems } from '../context/StoreItemsContext';
+import { MenuItemCard } from '../../components/MenuItemCard/MenuItemCard';
+import { useStoreItems } from '../../context/StoreItemsContext';
 
 export const Store = () => {
   const { storeItems, loading, error } = useStoreItems();

@@ -12,7 +12,7 @@ type StoreItemsProviderProps = {
   children: React.ReactNode;
 };
 
-const StoreItemsContext = React.createContext<StoreItemsContextProps>({
+export const StoreItemsContext = React.createContext<StoreItemsContextProps>({
   storeItems: [],
   loading: true,
   error: null,

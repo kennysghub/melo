@@ -22,7 +22,23 @@ type ShoppingCartContext = {
   cartItems: CartItem[];
 };
 
-const ShoppingCartContext = React.createContext({} as ShoppingCartContext);
+// Define default values that match the shape of ShoppingCartContext
+const defaultValues: ShoppingCartContext = {
+  openCart: () => {}, // no-op function
+  closeCart: () => {}, // no-op function
+  getItemQuantity: (id: number) => 0, // default to return 0
+  increaseCartQuantity: (id: number) => {}, // no-op function
+  decreaseCartQuantity: (id: number) => {}, // no-op function
+  removeFromCart: (id: number) => {}, // no-op function
+  cartQuantity: 0, // default value
+  cartItems: [], // default empty array
+};
+
+// export const ShoppingCartContext = React.createContext(
+//   {} as ShoppingCartContext
+// );
+
+export const ShoppingCartContext = React.createContext(defaultValues);
 
 export const useShoppingCart = () => {
   return React.useContext(ShoppingCartContext);

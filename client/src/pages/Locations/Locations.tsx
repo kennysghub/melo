@@ -12,6 +12,7 @@ import { CurrentLocationMarker } from './CurrentLocationMarker';
 import { Autocomplete } from './Autocomplete';
 import { useGeolocation } from '../../hooks/useGeoLocation';
 import { useFetch } from '../../hooks/useFetch';
+import { StoreType } from './utils/mapCenterType';
 import './mapStyle.css';
 
 export const Locations: React.FunctionComponent<
@@ -30,7 +31,9 @@ export const Locations: React.FunctionComponent<
     lng: defLng,
   });
 
-  const { data, loading, error } = useFetch('http://localhost:3000/stores');
+  const { data, loading, error } = useFetch<StoreType[]>(
+    'http://localhost:3000/stores'
+  );
 
   const center = useGeolocation();
 

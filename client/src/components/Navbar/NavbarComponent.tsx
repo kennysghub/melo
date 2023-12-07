@@ -16,9 +16,7 @@ export const NavbarComponent = () => {
             <NavbarLink to="/about">About</NavbarLink>
             <NavbarLink to="/locations">Find a Location 🌎</NavbarLink>
           </Nav>
-          {cartQuantity > 0 && (
-            <CartButton cartQuantity={cartQuantity} openCart={openCart} />
-          )}
+          {cartQuantity > 0 && <CartButton cartQuantity={cartQuantity} openCart={openCart} />}
         </Container>
       </NavbarBs>
     </>
