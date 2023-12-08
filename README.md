@@ -1,25 +1,57 @@
-# melo
+# Menu and Locations
 
-SG- MeLo challenge
+This is a simple app that lets you view a menu and locations of a restaurant. Locations markers are displayed on a map using [@vis.gl/react-google-maps](https://visgl.github.io/react-google-maps/docs)
 
-## API Keys
+Clicking on the AdvancedMarker Component will display the location's name and address, as well as a link to that specific location's menu in an InfoWindow.
 
-This application uses Google Maps API and MongoURI. There is an `.env.template` file in both the **server** and **client** directories that would normally be replaced with the user's personal API key. The API keys are restricted to only the Google Maps API.
+![Alt text](./assets/map.png)
 
-It is not best practice to have API keys/DB connections hard coded, but for the sake of this challenge, I have included them already in the `.env` files.
+Items can be added to the cart where users can view their order and checkout. The items are fetched from a MongoDB collection by a Provider using React's Context API. Any other components that need access to these values can call React's Context hook. The cart is stored in local storage so that it persists on page refresh.
+![Alt text](./assets/menuItems.png)
 
-This uses `@vis.gl/react-google-maps`, the first Google-sponsored React library for Google Maps. It's still in the **Alpha** version.
+The checkout page will display the user's order and total.
 
-## Installation
+![Alt text](./assets/checkoutPage.png)
 
-In the root directory, run:
+## Getting Started
+
+1. Clone the repo
 
 ```
+https://github.com/kennysghub/melo.git
+```
+
+2. In order for this app to work properly, you will need to create a .env file in the client directory and server directory. The .env file in the client directory will need to contain a **Google Maps API key**. The .env file in the server directory will need to contain a **MongoDB URI**. There are .env.template files in both folders.
+
+`./server/.env`
+
+```
+MONGO_URI=INSERT_MONGO_URI_HERE
+```
+
+`./client/.env`
+
+```
+GOOGLE_MAPS_API_KEY=INSERT_API_KEY_HERE
+
+```
+
+3. Install dependencies. In the root directory run:
+
+```
+
 npm run install-all
-```
-
-## Start
 
 ```
+
+This will install the dependencies for the server and client subdirectories. Packages are separated to avoid unnecessary coupling.
+
+3. Still in the root directory, run:
+
+```
+
 npm start
+
 ```
+
+This will start the server and client concurrently. The server will run on port 3000 and the client will run on port 8080.

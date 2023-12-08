@@ -5,10 +5,6 @@ import { BrowserRouter } from 'react-router-dom';
 import { NavbarComponent } from '../NavbarComponent';
 import { ShoppingCartContext } from '../../../context/ShoppingCartContext';
 
-// closeCart;
-// getItemQuantity;
-// increaseCartQuantity;
-// decreaseCartQuantit;
 describe('NavbarComponent', () => {
   const mockOpenCart = jest.fn();
 
